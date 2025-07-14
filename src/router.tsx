@@ -1,9 +1,19 @@
+import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router';
+
 import App from './App.tsx';
+
+const Lottery = lazy(() => import('./components/lottery/lottery'));
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <App />
+        element: <App />,
+        children: [
+            {
+                path: 'lottery',
+                element: <Lottery />
+            }
+        ]
     }
 ]);
