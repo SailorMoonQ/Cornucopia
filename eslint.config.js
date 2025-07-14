@@ -1,7 +1,7 @@
 import js from '@eslint/js';
 import { defineConfig } from 'eslint/config';
 import pluginReact from 'eslint-plugin-react';
-import pluginSimpleImportSort from 'eslint-plugin-simple-import-sort';
+import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -24,7 +24,7 @@ export default defineConfig([
             react: { version: 'detect' }
         },
         plugins: {
-            'simple-import-sort': pluginSimpleImportSort
+            'simple-import-sort': simpleImportSort
         },
         rules: {
             'react/jsx-uses-react': 'off',
