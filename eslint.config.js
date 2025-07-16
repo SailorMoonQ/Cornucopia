@@ -34,7 +34,7 @@ export default defineConfig([
                 {
                     groups: [
                         // Node.js builtins. You could also generate this regex if you use a `.js` config.
-                        // For example: `^(${require("module").builtinModules.join("|")})(/|$)`
+                        // For example, `^(${require("module").builtinModules.join("|")})(/|$)`
                         // Note that if you use the `node:` prefix for Node.js builtins,
                         // you can avoid this complexity: You can simply use "^node:".
                         [

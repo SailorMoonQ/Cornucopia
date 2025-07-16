@@ -24,6 +24,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-i18next": "^15.6.0",
+    "react-number-format": "^5.4.4",
     "react-router": "latest"
   },
   "devDependencies": {
