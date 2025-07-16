@@ -1,3 +1,8 @@
 {
-    "loading": "loading..."
+    "loading": "loading...",
+    "lottery": {
+      "title": "Lottery Generator",
+      "generate": "Generate",
+      "combination": "Combination"
+    }
 }

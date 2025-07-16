@@ -1,3 +1,8 @@
 {
-    "loading": "加载中..."
+    "loading": "加载中...",
+    "lottery": {
+        "title": "彩票生成器",
+        "generate": "生成",
+        "combination": "组合"
+    }
 }
