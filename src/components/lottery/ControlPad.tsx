@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { NumericFormat } from 'react-number-format';
 import { Stack, TextField } from '@mui/material';
 
-export default function Console() {
+export default function ControlPad() {
     const [range, setRange] = useState<string>('');
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

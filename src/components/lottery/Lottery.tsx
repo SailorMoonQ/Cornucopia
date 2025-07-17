@@ -4,7 +4,7 @@ import { Grid } from '@mui/material';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-import Console from './console.tsx';
+import ControlPad from './ControlPad.tsx';
 import generate from './lotteryGenerator.ts';
 
 export default function Lottery() {
@@ -18,7 +18,7 @@ export default function Lottery() {
     return (
         <Grid container direction="row" spacing={2}>
             <Grid size={4}>
-                <Console />
+                <ControlPad />
             </Grid>
             <Grid size={8}>
                 <Typography variant="h5" component="h2" sx={{ mb: 2 }}>
