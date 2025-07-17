@@ -1,8 +1,11 @@
 {
     "loading": "loading...",
+    "frame": {
+        "github": "Github Repo"
+    },
     "lottery": {
-      "title": "Lottery Generator",
-      "generate": "Generate",
-      "combination": "Combination"
+        "title": "Lottery Generator",
+        "generate": "Generate",
+        "combination": "Combination"
     }
 }

@@ -1,5 +1,8 @@
 {
     "loading": "加载中...",
+    "frame": {
+        "github": "Github Repo"
+    },
     "lottery": {
         "title": "彩票生成器",
         "generate": "生成",
