@@ -31,7 +31,7 @@ function AppHeader(props: AppHeaderProps) {
             <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', minHeight: HEIGHT }}>
                 <Logo />
                 <Stack direction="column" spacing={2}>
-                    <Tooltip title={t('appFrame.github')} enterDelay={300}>
+                    <Tooltip title={t('frame.github')} enterDelay={300}>
                         <IconButton
                             component="a"
                             color="primary"
