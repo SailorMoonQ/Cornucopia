@@ -1,28 +1,9 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Outlet } from 'react-router';
-import { Box, Container, Link, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 
 import AppHeader from './layouts/AppHeader.tsx';
-import ProTip from './ProTip';
-
-function Copyright() {
-    return (
-        <Typography
-            variant="body2"
-            align="center"
-            sx={{
-                color: 'text.secondary'
-            }}
-        >
-            {'Copyright © '}
-            <Link color="inherit" href="https://mui.com/">
-                Your Website
-            </Link>{' '}
-            {new Date().getFullYear()}.
-        </Typography>
-    );
-}
 
 export default function App() {
     const { t } = useTranslation();
@@ -30,15 +11,15 @@ export default function App() {
     return (
         <React.Fragment>
             <AppHeader />
-            <Container maxWidth="sm">
+            <Container>
                 <Box sx={{ my: 4 }}>
-                    <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-                        {t('loading')}
-                    </Typography>
-                    <Link href="/lottery">Lottery</Link>
-                    <Outlet />
-                    <ProTip />
-                    <Copyright />
+                    <Suspense fallback={
+                        <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
+                            {t('loading')}
+                        </Typography>
+                    }>
+                        <Outlet />
+                    </Suspense>
                 </Box>
             </Container>
         </React.Fragment>

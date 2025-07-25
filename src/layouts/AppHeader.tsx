@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import GitHubIcon  from '@mui/icons-material/GitHub';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { Container, IconButton, Stack, styled, Tooltip } from '@mui/material';
 
 import Logo from '../components/action/Logo.tsx';
@@ -28,7 +28,14 @@ function AppHeader(props: AppHeaderProps) {
 
     return (
         <Header>
-            <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', minHeight: HEIGHT }}>
+            <Container
+                sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    minHeight: HEIGHT
+                }}
+            >
                 <Logo />
                 <Stack direction="column" spacing={2}>
                     <Tooltip title={t('frame.github')} enterDelay={300}>
@@ -38,7 +45,7 @@ function AppHeader(props: AppHeaderProps) {
                             size="small"
                             sx={{
                                 border: `1px solid rgb(217, 222, 226)`,
-                                borderRadius: '12px',
+                                borderRadius: '12px'
                             }}
                             href={gitHubRepository}
                             target="_blank"

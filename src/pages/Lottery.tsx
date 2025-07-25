@@ -4,8 +4,8 @@ import { Grid } from '@mui/material';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-import ControlPad from './ControlPad.tsx';
-import generate from './lotteryGenerator.ts';
+import ControlPad from '../components/lottery/ControlPad.tsx';
+import generate from '../components/lottery/lotteryGenerator.ts';
 
 export default function Lottery() {
     const { t } = useTranslation();

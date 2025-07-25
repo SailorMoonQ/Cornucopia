@@ -3,7 +3,9 @@ import { createBrowserRouter } from 'react-router';
 
 import App from './App.tsx';
 
-const Lottery = lazy(() => import('./components/lottery/Lottery.tsx'));
+const Home = lazy(() => import('./pages/Home.tsx'));
+const Lottery = lazy(() => import('./pages/Lottery.tsx'));
+const Blog = lazy(() => import('./pages/./Blog'));
 
 export const router = createBrowserRouter([
     {
@@ -11,8 +13,20 @@ export const router = createBrowserRouter([
         element: <App />,
         children: [
             {
+                path: '',
+                element: <Home />
+            },
+            {
                 path: 'lottery',
                 element: <Lottery />
+            },
+            {
+                path: 'markdown',
+                element: <Blog />
+            },
+            {
+                path: '*',
+                element: (<div>404 reserve</div>)
             }
         ]
     }
