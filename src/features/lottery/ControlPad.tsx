@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { NumericFormat } from 'react-number-format';
 import { Stack, TextField, Typography } from '@mui/material';
 
-import Item from '../Item.tsx';
+import Item from '../../components/Item.tsx';
 
 export default function ControlPad() {
     const [min, setMin] = useState<number>(0);
